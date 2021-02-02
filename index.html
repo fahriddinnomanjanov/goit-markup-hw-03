@@ -19,12 +19,12 @@
   <body>
     <!-- header -->
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="navigation">
           <a class="logo" href="/index.html" aria-label="WebStudio"
             ><span class="logo__text">Web</span>Studio</a
           >
-          <ul class="list list navigation__list">
+          <ul class="list navigation__list">
             <li class="navigation__list-item">
               <a class="navigation__list-link" href="#">Студия</a>
             </li>
@@ -38,16 +38,20 @@
             </li>
           </ul>
         </nav>
-        <a class="link-info" href="#">info@devstudio.com</a>
-        <a class="link-to-number" href="#">+38 096 111 11 11</a>
+        <ul class="list header__list">
+            <li class="header__item">
+              <a class="link-info" href="#">info@devstudio.com</a>
+              <a class="link-to-number" href="#">+38 096 111 11 11</a>
+            </li>
+          </ul>
       </div>
     </header>
 
     <!-- Main -->
 
-    <main class="container">
+    <main class="main">
       <!-- Hero -->
-      <section class="hero">
+      <section class="section hero">
         <div class="hero__all">
           <h1 class="hero__all-caption">
             Эффективные решения для вашего бизнеса
@@ -56,8 +60,9 @@
         </div>
       </section>
       <!-- About -->
-      <section class="about">
-        <h2 class="visually-hidden">Особенности</h2>
+      <section class="section about">
+        <div class="container">
+          <h2 class="visually-hidden">Особенности</h2>
         <ul class="list about__list">
           <li class="about__list-item">
             <h3 class="about__list-caption">Внимание к деталям</h3>
@@ -88,10 +93,12 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <!-- Services -->
-      <section class="services">
-        <h2 class="caption_our services__caption">Чем мы занимаемся</h2>
+      <section class="section services">
+        <div class="container">
+          <h2 class="caption_our services__caption">Чем мы занимаемся</h2>
         <ul class="list services__list">
           <li class="services__list-item">
             <img
@@ -123,50 +130,78 @@
         </ul>
       </section>
       <!-- Our team -->
-      <section class="Our-team">
-        <h2 class="caption_our Our-team__caption">Наша команда</h2>
+      <section class="section Our-team">
+        <h2 class="caption_our Our-team__team-caption">Наша команда</h2>
         <ul class="list Our-team__list">
           <li class="Our-team__list-item">
-            <img src="./images/img4.jpg" alt="" width="270" height="260" />
-            <h3>Игорь Демьяненко</h3>
-            <p>Product Designer</p>
+            <img
+              class="Our-team__images"
+              src="./images/img4.jpg"
+              alt=""
+              width="270"
+              height="260"
+            />
+            <h3 class="Our-team__caption">Игорь Демьяненко</h3>
+            <p class="Our-team__description">Product Designer</p>
           </li>
           <li class="Our-team__list-item">
-            <img src="./images/img5.jpg" alt="" width="270" height="260" />
-            <h3>Ольга Репина</h3>
-            <p>Frontend Developer</p>
+            <img
+              class="Our-team__images"
+              src="./images/img5.jpg"
+              alt=""
+              width="270"
+              height="260"
+            />
+            <h3 class="Our-team__caption">Ольга Репина</h3>
+            <p class="Our-team__description">Frontend Developer</p>
           </li>
           <li class="Our-team__list-item">
-            <img src="./images/img6.jpg" alt="" width="270" height="260" />
-            <h3>Николай Тарасов</h3>
-            <p>Marketing</p>
+            <img
+              class="Our-team__images"
+              src="./images/img6.jpg"
+              alt=""
+              width="270"
+              height="260"
+            />
+            <h3 class="Our-team__caption">Николай Тарасов</h3>
+            <p class="Our-team__description">Marketing</p>
           </li>
           <li class="Our-team__list-item">
-            <img src="./images/img7.jpg" alt="" width="270" height="260" />
-            <h3>Михаил Ермаков</h3>
-            <p>UI Designer</p>
+            <img
+              class="Our-team__images"
+              src="./images/img7.jpg"
+              alt=""
+              width="270"
+              height="260"
+            />
+            <h3 class="Our-team__caption">Михаил Ермаков</h3>
+            <p class="Our-team__description">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!-- Footer -->
-    <footer class="container footer">
-      <a class="logo" href="/index.html" aria-label="WebStudio"
-        ><span class="logo__text">Web</span>Studio</a
-      >
-      <ul class="list footer__list">
-        <li class="footer__list-item">
-          <a class="footer__list-item--link" href=""
-            >г. Киев, пр-т Леси Украинки, 26</a
-          >
-        </li>
-        <li class="footer__list-item">
-          <a class="footer__list-item--link" href="">info@example.com</a>
-        </li>
-        <li class="footer__list-item">
-          <a class="footer__list-item--link" href="">+38 099 111 11 11</a>
-        </li>
-      </ul>
+    <footer class="footer">
+      <div class="container footer__container">
+        <a class="logo logo__footer" href="/index.html" aria-label="WebStudio"
+          ><span class="logo__text">Web</span
+          ><span class="logo__text-white">Studio</span></a
+        >
+        <ul class="list footer__list">
+          <li class="footer__list-item">
+            <a class="footer__list-item--link" href=""
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-item--link footer_item-color" href="">info@example.com</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-item--link footer_item-color" href="">+38 099 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

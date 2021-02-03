@@ -188,6 +188,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 16px;
+  letter-spacing: 0.03em;
   color: #212121;
 }
 

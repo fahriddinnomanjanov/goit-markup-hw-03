@@ -340,18 +340,20 @@ ol {
 }
 
 .section-wrapper__list {
+  margin-left: -30px;
+  margin-top: -30px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .section-wrapper__list-item {
-  margin-left: 10px;
-  margin-top: 10px;
+  margin-left: 30px;
+  margin-top: 30px;
   width: 370px;
   height: 404px;
   background: #ffffff;
   border: 1px solid #eeeeee;
-  flex-basis: calc(100% / 9 - 10px);
+  width: calc((100% - 90px) / 3);
 }
 
 .section-wrapper__list-item--images {

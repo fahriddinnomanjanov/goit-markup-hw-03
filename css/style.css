@@ -331,10 +331,10 @@ body {
   flex-basis: calc(100% / 9 - 10px);
 }
 
-.section-wrapper__list-link {
+/* .section-wrapper__list-link {
   margin-left: -10px;
   margin-top: -10px;
-}
+} */
 
 .section-wrapper__list-item--images {
   margin-bottom: 20px;

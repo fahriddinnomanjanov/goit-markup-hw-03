@@ -132,10 +132,6 @@ ol {
   color: #2196f3;
 }
 
-.link-to-number:hover {
-  color: #2196f3;
-}
-
 /* HERO */
 
 .section__hero {
@@ -166,12 +162,11 @@ ol {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  width: 200px;
-  height: 50px;
   border-radius: 4px;
   color: #ffffff;
   background-color: #2196f3;
   border: none;
+  padding: 10px 32px;
 }
 
 .hero__all-button:hover,
@@ -189,12 +184,13 @@ ol {
 .about__list-item {
   margin-left: 30px;
   margin-top: 30px;
-  width: calc((100% - 120px) / 4);
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .about__list-caption {
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
+  font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #212121;
@@ -221,7 +217,7 @@ ol {
   display: flex;
   margin-top: 30px;
   margin-left: 30px;
-  width: calc((100% - 90px) / 3);
+  flex-basis: calc(100% / 3 - 30px);
   width: 100%;
 }
 
@@ -242,11 +238,14 @@ ol {
   background-color: #ffffff;
   margin-left: 30px;
   margin-top: 30px;
-  width: calc((100% - 120px) / 4);
+  flex-basis: calc(100% / 4 - 30px);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
-.Our-team__images {
-  margin-bottom: 30px;
+.Our-team__several {
+  padding: 30px 0;
 }
 
 .Our-team__caption {
@@ -258,12 +257,16 @@ ol {
   margin-bottom: 10px;
 }
 
+.Our-team__images {
+  width: 100%;
+}
+
 .Our-team__description {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   color: #757575;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 .caption_our {
   font-weight: bold;
@@ -307,6 +310,12 @@ ol {
 .footer_item-color {
   color: #ffffff99;
 }
+.logo__footer:hover {
+  color: #2196f3;
+}
+.footer_item-color:hover {
+  color: #2196f3;
+}
 
 /* Портфолио */
 
@@ -328,12 +337,10 @@ ol {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  text-align: center;
   background-color: #f5f4fa;
-  width: 145px;
-  height: 38px;
   border-radius: 4px;
   border: none;
+  padding: 6px 20px;
 }
 
 .section-wrapper__button:hover {
@@ -351,19 +358,13 @@ ol {
 .section-wrapper__list-item {
   margin-left: 30px;
   margin-top: 30px;
-  width: 370px;
-  height: 404px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   width: calc((100% - 90px) / 3);
 }
 
-.section-wrapper__list-item--images {
-  margin-bottom: 20px;
-}
-
 .section-wrapper__list-link--text {
-  padding: 0 24px;
+  padding: 20px 24px;
 }
 
 .section-wrapper__list-item--caption {
@@ -376,8 +377,8 @@ ol {
 }
 
 .section-wrapper__list-item--text {
-  margin-bottom: 20px;
   font-size: 16px;
   line-height: 30px;
+  margin-bottom: 0;
   color: #757575;
 }

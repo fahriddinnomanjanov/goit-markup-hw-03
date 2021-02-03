@@ -287,7 +287,8 @@ ol {
 }
 
 .logo__footer {
-  margin-right: 0;
+  display: inline-block;
+  margin: 0 0 20px 0;
 }
 
 .logo__text-white {
